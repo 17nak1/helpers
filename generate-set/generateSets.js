@@ -143,11 +143,9 @@ generateSets.generateSet = function (dataset, determineRunProperties, paramObjec
       header: ['R0', 'amplitude', 'gamma', 'mu', 'sigma', 'rho', 'psi', 'S_0', 'E_0', 'R_0', 'I_0'],
       path: verifyPath (paramIndex, paramObject)
     })
-     
+     console.log(verifyPath (paramIndex, paramObject)+ '...done')
     csvWriter.writeRecords(paramProfile)
-      .then(() => {
-      console.log(verifyPath (paramIndex, paramObject) + '...done')
-    })
+      .then(() => {})
   }
 } 
 

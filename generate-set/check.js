@@ -1,13 +1,13 @@
 fs = require('fs')
 var dataset1 = []
-var file = fs.readFileSync('./ParamSet_DeterministicSEIR_run2.csv').toString()
+var file = fs.readFileSync('./test/ParamSet_DeterministicSEIR_run3.csv').toString()
 var lines = file.split('\n')
 for (let i = 1; i < lines.length; i++) {
   dataset1.push(lines[i].split(','))
 }
 
 var dataset2 = []
-var file = fs.readFileSync('./paramSet_R0.csv').toString()
+var file = fs.readFileSync('./paramSet_amplitude.csv').toString()
 var lines = file.split('\n')
 for (let i = 1; i < lines.length; i++) {
   dataset2.push(lines[i].split(','))

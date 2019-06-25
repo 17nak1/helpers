@@ -24,7 +24,7 @@ fs = require('fs')
  *  Read the dataset and order the inputs based on ['R0', 'amplitude', 'gamma', 'mu', 'sigma', 'rho', 'psi', 'S_0', 'E_0', 'R_0', 'I_0']
  */
 var dataset = []
-var file = fs.readFileSync('./DeterministicSEIR_all.csv').toString()
+var file = fs.readFileSync('./test/DeterministicSEIR_all.csv').toString()
 var lines = file.split('\n')
 for (let i = 1; i < lines.length; i++) {
   dataset.push(lines[i].split(','))
