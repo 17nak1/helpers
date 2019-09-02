@@ -17,6 +17,5 @@ for( i= 0; i < dataset1.length; i++) {
     if (Math.abs(dataset2[i][j] - dataset1[i][j]) > 1e-9) {
       console.log(i,j, dataset2[i][j] - dataset1[i][j])
     }
-
   }
 }
